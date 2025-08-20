@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ludo</title>
+</head>
+<body>
+    <table>
+        <style>
+            td,th{
+                color:azure (203, 121, 121);
+                height: 30px;
+                width: 30px;
+            }
+            th, table{border: 1px solid black;}
+        </style>
+    <tr>
+        <th colspan="6" rowspan="6" style="background-color: blue;"></th>
+        <!-- <th>A</th>
+        <th>A</th>
+        <th>A</th>
+        <th>A</th>
+        <th>A</th> -->
+        <th></th>
+        <th></th>
+        <th></th>
+        <th colspan="6" rowspan="6" style="background-color: green;"></th>
+        <!-- <th></th>
+        <th></th>
+        <th></th>
+        <th></th>
+        <th></th> -->
+    </tr>
+    <tr>
+        <th></th>
+        <th style="background-color: green;"></th>
+        <th style="background-color: green;"></th>
+        <!-- <th>B</th>
+        <th>B</th>
+        <th></th>
+        <th>B</th>
+        <th>B</th>
+        <th>B</th>
+        <th>B</th>
+        <th>B</th>
+        <th>B</th>
+        <th>B</th>
+        <th>B</th>
+        <th>B</th> -->
+    </tr>
+    <tr>
+        <th></th>
+        <th style="background-color: green;"></th>
+        <th></th>
+        <!-- <th></th>
+        <th>C</th>
+        <th>C</th>
+        <th>C</th>
+        <th>C</th>
+        <th>C</th>
+        <th>C</th>
+        <th>C</th>
+        <th>C</th>
+        <th>C</th>
+        <th>C</th>
+        <th>C</th> -->
+    </tr>
+    <tr>
+        <th></th>
+        <th style="background-color: green;"></th>
+        <th></th>
+        <!-- <th></th>
+        <th>D</th>
+        <th>D</th>
+        <th>D</th>
+        <th>D</th>
+        <th>D</th>
+        <th>D</th>
+        <th>D</th>
+        <th>D</th>
+        <th>D</th>
+        <th>D</th>
+        <th>D</th> -->
+    </tr>
+    <tr>
+        <th></th>
+        <th style="background-color: green;"></th>
+        <th></th>
+        <!-- <th></th>
+        <th>E</th>
+        <th>E</th>
+        <th>E</th>
+        <th>E</th>
+        <th>E</th>
+        <th>E</th>
+        <th>E</th>
+        <th>E</th>
+        <th>E</th>
+        <th>E</th>
+        <th>E</th> -->
+    </tr>
+    <tr>
+        <th></th>
+        <th style="background-color: green;"></th>
+        <th></th>
+        <!-- <th>F</th>
+        <th>F</th>
+        <th>F</th>
+        <th>F</th>
+        <th>F</th>
+        <th>F</th>
+        <th>F</th>
+        <th>F</th>
+        <th>F</th>
+        <th>F</th>
+        <th>F</th>
+        <th>F</th> -->
+    </tr>
+    <tr>
+        <th></th>
+        <th style="background-color: blue;"></th>
+        <th></th>
+        <th></th>
+        <th></th>
+        <th></th>
+        <th style="border: 0px;"></th>
+        <th style="border: 0px;"></th>
+        <th style="border: 0px;"></th>
+        <th></th>
+        <th></th>
+        <th></th>
+        <th></th>
+        <th></th>
+        <th></th>
+        <!-- <th></th> -->
+    </tr>
+    <tr>
+        <th></th>
+        <th style="background-color: blue;"></th>
+        <th style="background-color: blue;"></th>
+        <th style="background-color: blue;"></th>
+        <th style="background-color: blue;"></th>
+        <th style="background-color: blue;"></th>
+        <th style="border: 0px;"></th>
+        <th style="border: 0px;"></th>
+        <th style="border: 0px;"></th>
+        <th style="background-color: red;"></th>
+        <th style="background-color: red;"></th>
+        <th style="background-color: red;"></th>
+        <th style="background-color: red;"></th>
+        <th style="background-color: red;"></th>
+        <th></th>
+    </tr>
+    <tr>
+        <th></th>
+        <th></th>
+        <th></th>
+        <th></th>
+        <th></th>
+        <th></th>
+        <th style="border: 0px;"></th>
+        <th style="border: 0px;"></th>
+        <th style="border: 0px;"></th>
+        <th></th>
+        <th></th>
+        <th></th>
+        <th></th>
+        <th style="background-color: red;"></th>
+        <th></th>
+    </tr>
+    <tr>
+        <th colspan="6" rowspan="6" style="background-color: yellow;"></th>
+        <!-- <th></th>
+        <th></th>
+        <th></th>
+        <th>J</th>
+        <th>J</th> -->
+        <th></th>
+        <th style="background-color: yellow;"></th>
+        <th></th>
+        <th colspan="6" rowspan="6" style="background-color: red;"></th>
+        <!-- <th>J</th>
+        <th>J</th>
+        <th>J</th>
+        <th>J</th>
+        <th>J</th> -->
+    </tr>
+    <tr>
+        <th></th>
+        <th style="background-color: yellow;"></th>
+        <th></th>
+        <!-- <th></th>
+        <th>K</th>
+        <th>K</th>
+        <th>K</th>
+        <th>K</th>
+        <th>K</th>
+        <th>K</th>
+        <th>K</th>
+        <th>K</th>
+        <th>K</th>
+        <th>K</th>
+        <th>K</th> -->
+    </tr>
+    <tr>
+        <th></th>
+        <th style="background-color: yellow;"></th>
+        <th></th>
+        <!-- <th>L</th>
+        <th>L</th>
+        <th>L</th>
+        <th>L</th>
+        <th>L</th>
+        <th>L</th>
+        <th>L</th>
+        <th>L</th>
+        <th>L</th>
+        <th>L</th>
+        <th>L</th>
+        <th>L</th> -->
+    </tr>
+    <tr>
+        <th></th>
+        <th style="background-color: yellow;"></th>
+        <th></th>
+        <!-- <th>M</th>
+        <th>M</th>
+        <th>M</th>
+        <th>M</th>
+        <th>M</th>
+        <th>M</th>
+        <th>M</th>
+        <th>M</th>
+        <th>M</th>
+        <th>M</th>
+        <th>M</th>
+        <th>M</th> -->
+    </tr>
+    <tr>
+        <th style="background-color: yellow;"></th>
+        <th style="background-color: yellow;"></th>
+        <th></th>
+        <!-- <th>N</th>
+        <th>N</th>
+        <th>N</th>
+        <th>N</th>
+        <th>N</th>
+        <th>N</th>
+        <th>N</th>
+        <th>N</th>
+        <th>N</th>
+        <th>N</th>
+        <th>N</th>
+        <th>N</th> -->
+    </tr>
+    <tr>
+        <th></th>
+        <th></th>
+        <th></th>
+        <!-- <th>O</th>
+        <th>O</th>
+        <th>O</th>
+        <th>O</th>
+        <th>O</th>
+        <th>O</th>
+        <th>O</th>
+        <th>O</th>
+        <th>O</th>
+        <th>O</th>
+        <th>O</th>
+        <th>O</th> -->
+    </tr>
+    </table>
+</body>
+</html>

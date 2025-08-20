@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <button id="withGoogle">Sign In with Google</button>
+    <div id="display"></div>
+    <div id="show"></div>
+    <div id="disp"></div>
+
+    <script type="module">
+      // Import the functions you need from the SDKs you need
+      import { initializeApp } from "https://www.gstatic.com/firebasejs/10.0.0/firebase-app.js";
+      import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.0.0/firebase-analytics.js";
+      import {getAuth, GoogleAuthProvider, signInWithPopup, sendEmailVerification} from "https://www.gstatic.com/firebasejs/10.0.0/firebase-auth.js";
+      // TODO: Add SDKs for Firebase products that you want to use
+      // https://firebase.google.com/docs/web/setup#available-libraries
+
+      // Your web app's Firebase configuration
+      // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+      const firebaseConfig = {
+        apiKey: "AIzaSyBxATQOddd2xCjAEP5uz-heoCaeWLgEaiA",
+        authDomain: "my-first-project-7ca8f.firebaseapp.com",
+        projectId: "my-first-project-7ca8f",
+        storageBucket: "my-first-project-7ca8f.appspot.com",
+        messagingSenderId: "63392526026",
+        appId: "1:63392526026:web:22f9f21e17eb7633f50e33",
+        measurementId: "G-44WB6Z81VV",
+      };
+
+      // Initialize Firebase
+      const app = initializeApp(firebaseConfig);
+      const analytics = getAnalytics(app);
+      const auth = getAuth(app);
+      const provider = new GoogleAuthProvider();
+
+      document.getElementById("withGoogle").addEventListener("click", () => {
+        // alert("Goggle")
+        signInWithPopup(auth, provider)
+          .then((result) => {
+            const user = result.user;
+            console.log(user);
+            sendEmailVerification(auth.currentUser)
+            .then(()=>{
+            console.log("Email sent");
+            })
+            // Assignment
+            disp.innerHTML = `${user.displayName}`
+            show.innerHTML = `${user.email}`
+            display.innerHTML = `<img src="${user.photoURL}" />`
+          })
+          .catch((error) => {
+            const errorCode = error.code;
+            const errorMessage = error.message;
+            const email = error.customData.email;
+            const credential = GoogleAuthProvider.credentialFromError(error);
+            console.log(errorCode);
+            console.log(errorMessage);
+            console.log(email);
+            console.log(credential);
+          });
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,62 @@
+body{
+    background-image: url(../../Downloads/marek-piwnicki-MSG473tWhQY-unsplash\ \(1\).jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+table,tr,td{
+    border: 0;
+    padding: 10px;
+    width: fit-content;
+    height: fit-content;
+    color: white;
+    font-size: 20px;
+}
+button{
+    display: none;
+}
+input{
+    width: 250px;
+    height: -20px !important;
+  border-collapse: collapse;
+   
+    border-top: 0;
+}
+.container-fluid{
+    position: fixed;
+    top: 10px;
+}
+
+.class1{
+   font-size: 18px;
+   font-weight: 600;
+
+}
+#disp{
+    font-size: 30px;
+}
+#displa{
+    font-size: 100px;
+    color: white;
+}
+#display,#dispp,#dis,#displ{
+    font-size: 40px;
+    color: white;
+    font-weight: 600;
+}
+.images{
+    /* opacity: 0.9;*/
+    background: rgba(132, 74, 194, .6);
+    border-radius: 5px;
+}
+.table5{
+    margin-left: 120px !important;
+}
+.table{
+    margin-left: 80px !important;
+}
+.table1{
+    margin-left: 70px !important;
+}
+.table2{
+    margin-left: 40px !important;
+}
